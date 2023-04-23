@@ -1,0 +1,118 @@
+;;   EEEEE  MM      MM      AA       CCCC  SSSS
+;;   EE     MMMM  MMMM     AAAA     CCC   SSS
+;;   EEEEE  MM MMMM MM    AA  AA    CC     SSSS
+;;   EE     MM  MM  MM   AAAAAAAA   CCC      SSS
+;;   EEEEE  MM      MM  AA      AA   CCCC  SSSS
+;; [=============================================]
+
+;;                   PACKAGES
+;;                  [========]
+
+;; MELPA
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "https://melpa.org/packages/") t)
+(package-initialize)
+
+;;             BASIC CONFIGURATAION
+;;            [====================]
+
+;; Theme
+(load-theme 'wombat)
+
+;; Remove all GUI!
+(menu-bar-mode -1)
+(tool-bar-mode -1)
+(tooltip-mode -1)
+(scroll-bar-mode -1)
+
+;; User Configuration
+(setq user-mail-address "nhe@air.net.au")
+
+;; Remove Scratch Message
+(setq initial-scratch-message nil)
+
+;; Double Check Before Quit
+(setq confirm-kill-proccesses nil)
+
+;; Line Numbers
+(global-display-line-numbers-mode 1)
+
+;; Line Mode (Highlight current line (could uses some theme to make it more subtle))
+(hl-line-mode 1)
+
+;; Tab width
+(setq-default tab-width 4)
+(setq-default indent-tabs-mode nil)
+
+;; Tab Indents Before Completion
+(setq-default tab-always-indent 'complete)
+
+;; Improve Scrolling
+(setq mouse-wheel-scroll-amount '(1 ((shift) . 1))) ;; one line at a time
+(setq mouse-wheel-progressive-speed nil) ;; don't accelerate scrolling
+(setq mouse-wheel-follow-mouse 't) ;; scroll window under mouse
+(setq scroll-step 1) ;; keyboard scroll one line at a time
+
+;; Cursor Configurations
+(setq cursor-type 'box)
+(blink-cursor-mode 1)
+
+;; Remember Recent Edited Files
+(recentf-mode 1)
+(global-set-key (kbd "C-x r") 'recentf-open-files)
+
+
+;;             BACKUP CONFIGURATAION
+;;            [=====================]
+
+;; Backup Directory
+(setq backup-directory-alist '(("." . "~/.config/emacs/backups")))
+
+;; Only Keep 500 Backups Of A File
+(setq kept-old-versions 500)
+
+;; Clean Out Old Backups
+(setq delete-old-versions t)
+
+;; Add Version Numbers to Backups
+(setq version-control t)
+
+;; Make Backup Every Save
+(defun force-backup-of-buffer ()
+  (setq buffer-backed-up nil))
+(add-hook 'before-save-hook  'force-backup-of-buffer)
+
+
+;; TheThe
+(defun the-the ()
+  "Search forward for for a duplicated word."
+  (interactive)
+  (message "Searching for for duplicated words ...")
+  (push-mark)
+
+;; This regexp is not perfect
+;; but is fairly good over all:
+  (if (re-search-forward
+       "\\b\\([^@ \n\t]+\\)[ \n\t]+\\1\\b" nil 'move)
+      (message "Found duplicated word.")
+    (message "End of buffer")))
+
+
+;; Bind 'the-the' to  C-c
+(global-set-key "\C-c\\" 'the-the)
+
+;; Remove Bothersome Compiler Warnings 
+(setq comp-async-report-warnings-errors nil)
+(when (fboundp 'native-compile-async)
+  (setq comp-deferred-compilation t
+        comp-deferred-compilation-black-list '("/mu4e.*\\.el$")))
+
+;; Time Emacs Startup
+(setq gc-cons-threshold (* 50 1000 1000))
+(add-hook 'emacs-startup-hook
+          (lambda ()
+            (message "*** Emacs loaded in %s with %d garbage collections."
+                     (format "%.2f seconds"
+                             (float-time
+                              (time-subtract after-init-time before-init-time)))
+                     gcs-done)))

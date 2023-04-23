@@ -1,0 +1,2 @@
+;;; Generated package description from comment-dwim.el  -*- no-byte-compile: t -*-
+(define-package "comment-dwim-2" "20210101.1820" "An all-in-one comment command to rule them all" '((emacs "24.4")) :commit "b4d6bf4be5a159c4bcc7d43bea287315a16114ce" :authors '(("Rémy Ferré" . "dev@remyferre.net")) :maintainer '("Rémy Ferré" . "dev@remyferre.net") :keywords '("convenience") :url "https://github.com/remyferre/comment-dwim-2")
