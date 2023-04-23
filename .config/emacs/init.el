@@ -73,11 +73,21 @@
 ;;             BASIC CONFIGURATAION
 ;;            [====================]
 
-;; Theme
+;; Safe Themes
+;; Doom Themes can run elisp? this shouldn't be neccessary but whatever
 (custom-set-variables
  '(custom-safe-themes
-   '("b54376ec363568656d54578d28b95382854f62b74c32077821fdfd604268616a" default)))
-(load-theme 'doom-monokai-spectrum)
+   '("b54376ec363568656d54578d28b95382854f62b74c32077821fdfd604268616a"
+     default)))
+
+;; Load Theme Based On Current Host
+;; Load Catppuccin on my desktop and Monokai on my Thinkpad
+(if (string= (system-name) "littlefella")
+    (progn
+      (add-to-list 'custom-theme-load-path "~/.config/emacs/themes/")
+      (setq catppuccin-flavor 'macchiato)
+      (load-theme 'catppuccin t))
+  (load-theme 'doom-monokai-spectrum))
 
 ;; Font
 (custom-set-faces
