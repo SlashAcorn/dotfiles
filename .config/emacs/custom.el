@@ -14,10 +14,7 @@
  '(minimap-update-delay 0)
  '(minimap-window-location 'right)
  '(package-selected-packages
-   '(treemacs-all-the-icons treemacs all-the-icons-ivy all-the-icons-ivy-rich
-     all-the-icons doom-modeline ivy-rich minimap emojify no-littering counsel
-     beacon consult helpful avy hydra swiper ivy doom-themes rainbow-delimiters
-     which-key auto-package-update comment-dwim-2 minions ws-butler))
+   '(markdown-mode treemacs-all-the-icons treemacs all-the-icons-ivy all-the-icons-ivy-rich all-the-icons doom-modeline ivy-rich minimap emojify no-littering counsel beacon consult helpful avy hydra swiper ivy doom-themes rainbow-delimiters which-key auto-package-update comment-dwim-2 minions ws-butler))
  '(tool-bar-mode nil))
 ;; (custom-set-faces
 ;;  ;; custom-set-faces was added by Custom.

@@ -164,14 +164,14 @@
 	   ("John Wiegley" . "jwiegley@gmail.com"))
 	  (:commit . "53addd02fbad33765f508f8e6254ebd44e1f81e5"))])
  (auctex .
-	 [(13 1 10)
+	 [(13 2 0)
 	  ((emacs
 	    (25 1)))
 	  "Integrated environment for *TeX*" tar
 	  ((:url . "https://www.gnu.org/software/auctex/")
 	   (:keywords "tex" "latex" "texinfo" "context" "doctex" "preview-latex")
 	   (:maintainer nil . "auctex-devel@gnu.org")
-	   (:commit . "658832b8a228f072e6a5a760e7d9fba1ae9808a6"))])
+	   (:commit . "9d47b0a1bdffb8e01a83bf507dac7677ecca92f7"))])
  (aumix-mode .
 	     [(7)
 	      nil "run the aumix program in a buffer" single
@@ -476,7 +476,7 @@
 		("Augusto Stoffel" . "arstoffel@gmail.com"))
 	       (:commit . "fd68a33eb43b3cbd44fed767f48e230382903592"))])
  (comint-mime .
-	      [(0 2)
+	      [(0 3)
 	       ((emacs
 		 (28 1)))
 	       "Display content of various MIME types in comint buffers" tar
@@ -485,7 +485,7 @@
 		(:maintainer "Augusto Stoffel" . "arstoffel@gmail.com")
 		(:authors
 		 ("Augusto Stoffel" . "arstoffel@gmail.com"))
-		(:commit . "9f480e76851d163e0aba0eaf0299d8d15bc0ee25"))])
+		(:commit . "91b2926d2bf40a31a55fdb80c7dc21652bcf9417"))])
  (compact-docstrings .
 		     [(0 2)
 		      nil "Shrink blank lines in docstrings and doc comments" single
@@ -2695,7 +2695,7 @@
 	   ("Mario Lang" . "mlang@delysid.org"))
 	  (:maintainer "Mario Lang" . "mlang@delysid.org"))])
  (posframe .
-	   [(1 4 1)
+	   [(1 4 2)
 	    ((emacs
 	      (26 1)))
 	    "Pop a posframe (just a frame) at point" tar
@@ -2704,7 +2704,7 @@
 	     (:maintainer "Feng Shu" . "tumashu@163.com")
 	     (:authors
 	      ("Feng Shu" . "tumashu@163.com"))
-	     (:commit . "b00f1386ca4e251a5c3d8985d313217e56e42a7e"))])
+	     (:commit . "3b97dc180b03498103cfcc7f44e64150df440bf0"))])
  (project .
 	  [(0 9 8)
 	   ((emacs
@@ -3826,17 +3826,18 @@
 		  ("Wilson Snyder" . "wsnyder@wsnyder.org"))
 		 (:commit . "2c2ecb46b0ad3e841ac9551e3a80d02893cdf6ec"))])
  (vertico .
-	  [(1 2)
+	  [(1 3)
 	   ((emacs
 	     (27 1))
 	    (compat
 	     (29 1 4 0)))
 	   "VERTical Interactive COmpletion" tar
 	   ((:url . "https://github.com/minad/vertico")
+	    (:keywords "convenience" "files" "matching" "completion")
 	    (:maintainer "Daniel Mendler" . "mail@daniel-mendler.de")
 	    (:authors
 	     ("Daniel Mendler" . "mail@daniel-mendler.de"))
-	    (:commit . "3386763b717415840fd58929cc2ca056e0eb10d5"))])
+	    (:commit . "5aeff1e3464dbede5d3969fff088191c1a6d84a3"))])
  (vertico-posframe .
 		   [(0 7 2)
 		    ((emacs

@@ -5,6 +5,7 @@
 ;;   EEEEE  MM      MM  AA      AA   CCCC  SSSS
 ;; [=============================================]
 
+
 ;;                   PACKAGES
 ;;                  [========]
 
@@ -65,15 +66,32 @@
 (use-package rainbow-delimiters
   :hook (prog-mode . rainbow-delimiters-mode))
 
+;; All the Icons
+(use-package all-the-icons
+  :if (display-graphic-p))
+
+;; Keep .config/emacs clean
+(use-package no-littering)
+
 
 ;;             BASIC CONFIGURATAION
 ;;            [====================]
 
-;; Theme
+;; Safe Themes
+;; Doom Themes can run elisp? this shouldn't be neccessary but whatever
 (custom-set-variables
  '(custom-safe-themes
-   '("b54376ec363568656d54578d28b95382854f62b74c32077821fdfd604268616a" default))
-(load-theme 'doom-monokai-spectrum)
+   '("b54376ec363568656d54578d28b95382854f62b74c32077821fdfd604268616a"
+     default)))
+
+;; Load Theme Based On Current Host
+;; Load Catppuccin on my desktop and Monokai on my Thinkpad
+(if (string= (system-name) "littlefella")
+    (progn
+      (add-to-list 'custom-theme-load-path "~/.config/emacs/themes/")
+      (setq catppuccin-flavor 'macchiato)
+      (load-theme 'catppuccin t))
+  (load-theme 'doom-monokai-spectrum))
 
 ;; Font
 (custom-set-faces
@@ -99,6 +117,16 @@
 (setq whitespace-line-column 80)
 (setq whitespace-style '(face lines-tail))
 (add-hook 'prog-mode-hook 'whitespace-mode)
+
+;; Ivy Completion and Ivy Rich Mode
+(ivy-mode 1)
+(setq ivy-use-selectable-prompt t)
+(ivy-rich-mode 1)
+(setcdr (assq t ivy-format-functions-alist) #'ivy-format-function-line)
+
+;; Counsel
+;; Allow for Ivy-Enhanced common Emacs commands
+(counsel-mode 1)
 
 ;; User Configuration
 (setq user-mail-address "nhe@air.net.au")
@@ -134,8 +162,19 @@
 (set-keyboard-coding-system 'utf-8)
 (prefer-coding-system 'utf-8)
 
+;; Emoji Support!
+(use-package emojify
+  :hook (erc-mode . emojify-mode)
+  :commands emojify-mode)
+
 ;; Line Numbers
 (global-display-line-numbers-mode 1)
+
+;; Line Numbers in Some Modes
+(dolist (mode '(text-mode-hook
+                prog-mode-hook
+                conf-mode-hook))
+  (add-hook mode (lambda () (display-line-numbers-mode 1))))
 
 ;; Increase Wrap Column to fit modern standards
 (setq-default fill-column 80)
@@ -147,8 +186,7 @@
 (setq require-final-newline t)
 
 ;; Line Mode (Highlight current line
-;; (could uses some theme to make it more subtle))
-(hl-line-mode -1)
+(hl-line-mode 1)
 
 ;; Tab width
 (setq-default tab-width 4)
@@ -189,23 +227,43 @@
 
 ;; Remember Recent Edited Files
 (recentf-mode 1)
-(global-set-key (kbd "C-x r") 'recentf-open-files)
 
 ;; Remove Warning on Large Files
 (setq large-file-warning-threshold nil)
+
+;; Remove Warning on Advised Functions
+(setq ad-redefinition-action 'accept)
+
+
+;;             MODELINE MODIFICATIONS
+;;            [======================]
+
+(doom-modeline-mode 1)
+
+;; Clean Up Modeline
+(minions-mode 1)
 
 
 ;;             KEYBOARD MODIFICATIONS
 ;;            [======================]
 
-;; Bind C-j to Line Jump Relative
-(global-set-key (kbd "C-j") 'goto-line-relative)
+;; Bind M-p to previous paragraph to match C-Up
+(global-set-key (kbd "M-p") 'backward-paragraph)
+
+;; Bind M-n to previous paragraph to match C-Down
+(global-set-key (kbd "M-n") 'forward-paragraph)
+
+;; ESC Cancels All
+(global-set-key (kbd "<escape>") 'keyboard)
+
+;; Bind C-j to Swiper to search
+(global-set-key (kbd "C-j") 'swiper)
 
 ;; Bind C-S-j to Goto Line
 (global-set-key (kbd "C-S-j") 'goto-line)
 
 ;; Bind C-x r to Open Recent Files
-;; global-set-key (kbd "C-x r") 'recentf-open-files)
+global-set-key (kbd "C-x r") 'recentf-open-files)
 
 ;; Unbind C-z because C-x C-z does the same thing
 (global-unset-key (kbd "C-z"))
@@ -222,6 +280,14 @@
 (global-set-key (kbd "C-h v") #'helpful-variable)
 (global-set-key (kbd "C-h k") #'helpful-key)
 (global-set-key (kbd "C-h x") #'helpful-command)
+
+;; More Helpful Keys
+(global-set-key (kbd "C-c C-d") #'helpful-at-point)
+(global-set-key (kbd "C-h F") #'helpful-function)
+
+;; Dictionary Definition of Current Word
+(global-set-key (kbd "C-h d") #'dictionary-lookup-definition)
+(global-set-key (kbd "C-h C-d") #'apropos-documentation)
 
 ;; Bind M-o to switch frame becuase C-x o is slow
 (global-set-key (kbd "M-o") 'other-window)

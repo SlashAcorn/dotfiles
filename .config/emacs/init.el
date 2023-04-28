@@ -4,6 +4,7 @@
 ;;   EE     MM  MM  MM   AAAAAAAA   CCC      SSS
 ;;   EEEEE  MM      MM  AA      AA   CCCC  SSSS
 ;; [=============================================]
+;; SlashAcorn/dotfiles
 
 
 ;;                   PACKAGES
@@ -66,6 +67,10 @@
 (use-package rainbow-delimiters
   :hook (prog-mode . rainbow-delimiters-mode))
 
+;; All the Icons
+(use-package all-the-icons
+  :if (display-graphic-p))
+
 ;; Keep .config/emacs clean
 (use-package no-littering)
 
@@ -113,6 +118,16 @@
 (setq whitespace-line-column 80)
 (setq whitespace-style '(face lines-tail))
 (add-hook 'prog-mode-hook 'whitespace-mode)
+
+;; Ivy Completion and Ivy Rich Mode
+(ivy-mode 1)
+(setq ivy-use-selectable-prompt t)
+(ivy-rich-mode 1)
+(setcdr (assq t ivy-format-functions-alist) #'ivy-format-function-line)
+
+;; Counsel
+;; Allow for Ivy-Enhanced common Emacs commands
+(counsel-mode 1)
 
 ;; User Configuration
 (setq user-mail-address "nhe@air.net.au")
@@ -172,8 +187,7 @@
 (setq require-final-newline t)
 
 ;; Line Mode (Highlight current line
-;; (could uses some theme to make it more subtle))
-(hl-line-mode -1)
+(hl-line-mode 1)
 
 ;; Tab width
 (setq-default tab-width 4)
@@ -214,7 +228,6 @@
 
 ;; Remember Recent Edited Files
 (recentf-mode 1)
-(global-set-key (kbd "C-x r") 'recentf-open-files)
 
 ;; Remove Warning on Large Files
 (setq large-file-warning-threshold nil)
@@ -226,8 +239,10 @@
 ;;             MODELINE MODIFICATIONS
 ;;            [======================]
 
+(doom-modeline-mode 1)
+
 ;; Clean Up Modeline
-(use-package diminish)
+(minions-mode 1)
 
 
 ;;             KEYBOARD MODIFICATIONS
@@ -240,16 +255,16 @@
 (global-set-key (kbd "M-n") 'forward-paragraph)
 
 ;; ESC Cancels All
-(global-set-key (kbd "<escape>") 'keyboard-escape-quit)
+(global-set-key (kbd "<escape>") 'keyboard)
 
-;; Bind C-j to Line Jump Relative
-(global-set-key (kbd "C-j") 'goto-line-relative)
+;; Bind C-j to Swiper to search
+(global-set-key (kbd "C-j") 'swiper)
 
 ;; Bind C-S-j to Goto Line
 (global-set-key (kbd "C-S-j") 'goto-line)
 
 ;; Bind C-x r to Open Recent Files
-;; global-set-key (kbd "C-x r") 'recentf-open-files)
+(global-set-key (kbd "C-x r") 'recentf-open-files)
 
 ;; Unbind C-z because C-x C-z does the same thing
 (global-unset-key (kbd "C-z"))
