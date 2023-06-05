@@ -1,0 +1,23 @@
+#! /bin/sh
+
+# Rust Replacements
+alias grep='rg'
+alias cat='bat'
+alias ls='exa -a --icons --group-directories-first'
+
+# Settings
+alias mkdir='mkdir -pv'
+alias mv='mv -iv'
+alias rm='rm -vI'
+
+# QOL
+alias locate='plocate'
+alias ..='cd ..'
+alias .2='cd ../..'
+alias .3='cd ../../..'
+alias .4='cd ../../../..'
+alias .5='cd ../../../../..'
+
+# Kitty Aliases
+alias transfer='kitty +kitten transfer'
+alias icat='kitty +kitten icat'
