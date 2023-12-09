@@ -3,7 +3,7 @@
 ## Todo:
 - [ ] Write a ReadMe
 - [ ] Try Out Riverwm
-- [ ] Fully Configure Waybar
+- [X] Fully Configure Waybar
 - [ ] Configure Hyprland More in Depth
-- [ ] Learn Magit
+- [X] Learn Magit
 - [ ] Use org-mode
