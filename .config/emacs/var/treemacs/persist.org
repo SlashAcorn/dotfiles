@@ -1,3 +1,0 @@
-* Default
-** emacs
- - path :: ~/.config/emacs
