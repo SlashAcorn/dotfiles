@@ -18,4 +18,4 @@ echo "ipc = off" > $hyprpaperconfig
 echo "preload = "$wallpaperdir$wallpaper >> $hyprpaperconfig
 echo "wallpaper = DP-1,"$wallpaperdir$wallpaper >> $hyprpaperconfig
 killall hyprpaper
-hyprpaper -c $hyprpaperconfig
+hyprpaper -c $hyprpaperconfig &

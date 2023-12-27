@@ -60,6 +60,7 @@ button:hover {
 #pulseaudio,
 #wireplumber,
 #custom-media,
+#randomwall,
 #tray,
 #idle_inhibitor,
 #window,
@@ -72,10 +73,7 @@ button:hover {
 #network{
     padding-right: 1.5rem;
 }
-#cpu{
-    padding-right: 1.25rem;
-}
-#memory{
+#cpu, #memory{
     padding-right: 1.25rem;
 }
 #tray{
@@ -93,86 +91,4 @@ button:hover {
 /* If workspaces is the rightmost module, omit right margin */
 .modules-right > widget:last-child > #workspaces {
     margin-right: .9rem;
-}
-
-#clock {
-}
-
-label:focus {
-}
-
-#cpu {
-}
-
-#memory {
-}
-
-#disk {
-}
-
-#network {
-}
-
-#network.disconnected {
-}
-
-#pulseaudio {
-}
-
-#pulseaudio.muted {
-}
-
-#wireplumber {
-}
-
-#wireplumber.muted {
-}
-
-#custom-media {
-    min-width: 100px;
-}
-
-#custom-media.custom-spotify {
-}
-
-#temperature {
-}
-
-#temperature.critical {
-}
-
-#tray {
-}
-
-#tray > .passive {
-    -gtk-icon-effect: dim;
-}
-
-#tray > .needs-attention {
-    -gtk-icon-effect: highlight;
-}
-
-#idle_inhibitor {
-}
-
-#idle_inhibitor.activated {
-}
-
-#language {
-    padding: 0 5px;
-    margin: 0 5px;
-    min-width: 16px;
-}
-
-#keyboard-state {
-    padding: 0 0px;
-    margin: 0 5px;
-    min-width: 16px;
-}
-
-#keyboard-state > label {
-    padding: 0 5px;
-}
-
-#keyboard-state > label.locked {
 }

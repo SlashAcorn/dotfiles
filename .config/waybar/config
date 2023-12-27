@@ -5,11 +5,11 @@
     // "width": 90%, // Waybar width
     "spacing": 10, // Gaps between modules (4px)
     // Choose the order of the modules
-    "modules-left": ["custom/themer", "wlr/workspaces", "pulseaudio"],
+    "modules-left": ["hyprland/workspaces", "pulseaudio", "custom/randomwall"],
     "modules-center": ["custom/media"],
-    "modules-right": ["network", "cpu", "memory", "temperature", "battery", "clock", "tray"],
+    "modules-right": ["network", "cpu", "memory", "temperature", "clock", "tray"],
     // Modules configuration
-    "wlr/workspaces": {  
+    "hyprland/workspaces": {  
         "on-scroll-up": "hyprctl dispatch workspace e+1",
         "on-scroll-down": "hyprctl dispatch workspace e-1",
         "on-click": "activate",
@@ -21,13 +21,6 @@
         "format-icons": {
             "locked": "",
             "unlocked": ""
-        }
-    },
-    "idle_inhibitor": {
-        "format": "{icon}",
-        "format-icons": {
-            "activated": "",
-            "deactivated": ""
         }
     },
     "tray": {
@@ -66,15 +59,15 @@
     "pulseaudio": {
         // "scroll-step": 1, // %, can be a float
         "format": "{volume}% {icon} {format_source}",
-        "format-bluetooth": "{volume}% {icon} {format_source}",
-        "format-bluetooth-muted": "{icon} {format_source}",
+        "format-bluetooth": "{volume}% {icon}  {format_source}",
+        "format-bluetooth-muted": "{icon}  {format_source}",
         "format-muted": "{format_source}",
         "format-source": "{volume}% ",
         "format-source-muted": "",
         "format-icons": {
             "headphone": "",
-            "hands-free": "",
-            "headset": "",
+            "hands-free": " ",
+            "headset": "󰋎",
             "phone": "",
             "portable": "",
             "car": "",
@@ -93,6 +86,7 @@
         "escape": true,
         "exec": "$HOME/.config/waybar/mediaplayer.py 2> /dev/null"
     }
+    }# "custom/randomwall": {
+    #     "format": "test"
+    # }
 }
-
-BB

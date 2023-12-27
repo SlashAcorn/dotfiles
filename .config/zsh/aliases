@@ -3,7 +3,7 @@
 # Rust Replacements
 alias grep='rg'
 alias cat='bat'
-alias ls='exa -a --icons --group-directories-first'
+alias ls='eza -a --icons --group-directories-first'
 
 # Settings
 alias mkdir='mkdir -pv'
@@ -21,3 +21,6 @@ alias .5='cd ../../../../..'
 # Kitty Aliases
 alias transfer='kitty +kitten transfer'
 alias icat='kitty +kitten icat'
+
+# wget
+alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
