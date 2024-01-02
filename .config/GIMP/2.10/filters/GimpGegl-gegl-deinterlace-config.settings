@@ -1,0 +1,9 @@
+# settings
+
+(GimpGegl-gegl-deinterlace-config "2023-12-19 11:35:53"
+    (time 1702946153)
+    (keep even)
+    (orientation horizontal)
+    (size 1))
+
+# end of settings

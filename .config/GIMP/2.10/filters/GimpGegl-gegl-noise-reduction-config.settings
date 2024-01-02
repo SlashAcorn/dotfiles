@@ -1,0 +1,10 @@
+# settings
+
+(GimpGegl-gegl-noise-reduction-config "2023-12-19 11:36:34"
+    (time 1702946194)
+    (iterations 7))
+(GimpGegl-gegl-noise-reduction-config "2021-08-07 16:02:23"
+    (time 1628316143)
+    (iterations 8))
+
+# end of settings

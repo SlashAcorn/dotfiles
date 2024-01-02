@@ -1,0 +1,12 @@
+# settings
+
+(GimpGegl-gegl-saturation-config "2021-12-13 16:12:16"
+    (time 1639372336)
+    (scale 0)
+    (colorspace Native))
+(GimpGegl-gegl-saturation-config "2021-03-10 21:15:29"
+    (time 1615371329)
+    (scale 0.78200000000000003)
+    (colorspace Native))
+
+# end of settings

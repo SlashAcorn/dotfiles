@@ -1,0 +1,626 @@
+: 1703654037:0;sudo mkarchiso -w build -o iso profile/
+: 1703654099:0;yay -Sy
+: 1703654104:0;sudo mkarchiso -w build -o iso profile/
+: 1703654190:0;sudo mkarchiso -w build -o iso profile/ --help
+: 1703654198:0;mkarchiso --help
+: 1703654206:0;sudo mkarchiso -v -w build -o iso profile/
+: 1703654306:0;ls
+: 1703654310:0;ls iso
+: 1703654314:0;ls iso/arch
+: 1703654324:0;sudo -E rpi-imager
+: 1703718069:0;cd prj/dotfiles
+: 1703718077:0;timedatectl
+: 1703718098:0;systemctl status ntpd
+: 1703718117:0;nmtui
+: 1703718133:0;yay -Syu
+: 1703718207:0;timedatectl
+: 1703718287:0;yay -R catppuccinifier-cli-git
+: 1703718294:0;yay -S catppuccinifier
+: 1703678736:0;hwclock
+: 1703678739:0;sudo hwclock
+: 1703678746:0;sudo hwclock --help
+: 1703678754:0;sudo hwclock -w
+: 1703678788:0;spicetify backup
+: 1703678806:0;spicetify restore backup
+: 1703678834:0;ls
+: 1703678861:0;cp ~/.zshenv .
+: 1703678877:0;cp -v ~/.config/hypr .config/hypr
+: 1703678880:0;cp -rv ~/.config/hypr .config/hypr
+: 1703678885:0;ls .config
+: 1703678927:0;cp -rv ~/.config/zsh/ .config/zsh
+: 1703678962:0;cp -rv ~/.config/neofetch .config/neofetch
+: 1703678971:0;spicetify restore backup apply
+: 1703679204:0;cd ~/.config
+: 1703679226:0;/usr/bin/ls ~/prj/dotfiles/.config
+: 1703679232:0;/usr/bin/ls ~/prj/dotfiles/.config | tar --help
+: 1703679247:0;tar --xk
+: 1703679250:0;tar --help
+: 1703679310:0;/usr/bin/ls ~/prj/dotfiles/.config | tar -cf - -T - | tar -xf - -C ../prj/dotfiles/.config
+: 1703679321:0;ls ~/prj/dotfiles/.config
+: 1703679391:0;ls -la ~/prj/dotfiles/.config
+: 1703679413:0;cd ~/prj/dotfiles/
+: 1703679416:0;git status
+: 1703679428:0;git commit -a
+: 1703679450:0;git push
+: 1703680272:0;ls .config/zsh
+: 1703680277:0;ls -la .config/zsh
+: 1703738990:0;pass
+: 1703738997:0;pass misc/ankiweb
+: 1703745075:0;pass -c misc/ankiweb
+: 1703816498:0;lx
+: 1703816499:0;ls
+: 1703816502:0;bat README.txt
+: 1703816513:0;chmod +x ssbm-1.03-A-iso-builder.sh
+: 1703816525:0;./ssbm-1.03-A-iso-builder.sh ~/games/roms/VanillaMelee.iso
+: 1703816565:0;ls
+: 1703819440:0;yay -Ss migaku
+: 1703819448:0;yay migaku
+: 1703819466:0;cd .config/mpv/
+: 1703819467:0;ls
+: 1703819469:0;mkdir scripts
+: 1703845952:0;nmtui
+: 1703850373:0;yay -S fcitx5
+: 1703850386:0;yay -Rns fcitx
+: 1703850398:0;yay -R fcitx-qt6
+: 1703850402:0;yay -R fcitx-qt5
+: 1703850410:0;yay -R kcm-fcitx
+: 1703850417:0;cd /usr/share/zsh
+: 1703850417:0;ls
+: 1703850419:0;cd plugins
+: 1703850419:0;ls
+: 1703850434:0;mv zsh-autosuggestions zsh-autosuggestions.bak
+: 1703850436:0;sudo mv zsh-autosuggestions zsh-autosuggestions.bak
+: 1703850441:0;ls
+: 1703850453:0;dash
+: 1703850455:0;ls
+: 1703850459:0;yay -S fcitx
+: 1703850473:0;yay -Rns fcitx
+: 1703850539:0;yay -Rncs fcitx
+: 1703850582:0;yay -Ss fcitx5
+: 1703850594:0;yay -Ss fcitx5-om
+: 1703850597:0;yay -Ss fcitx5-im
+: 1703850606:0;yay -S fcitx5-im
+: 1703850650:0;yay -S fcitx-mozc emacs-mozc
+: 1703851073:0;yay -S fcitx5-mozc
+: 1703851103:0;yay -S fcitx5-mozc emacs-mozv
+: 1703851104:0;yay -S fcitx5-mozc emacs-mozc
+: 1703851147:0;vim .zshenv
+: 1703851247:0;vim .config/hypr/hyprland.conf
+: 1703851306:0;fcitx5
+: 1703890896:0;yay -Syu
+: 1703891449:0;spicetify backup restore
+: 1703891455:0;spicetify restore backup
+: 1703891490:0;spicetify apply
+: 1703926255:0;cava
+: 1703926379:0;tty-clock
+: 1703926386:0;tty-clock -c -s -C yellow
+: 1703926388:0;tty-clock -c -s -C 2
+: 1703926389:0;tty-clock -c -s -C 3
+: 1703926391:0;tty-clock -c -s -C 4
+: 1703926392:0;tty-clock -c -s -C 5
+: 1703926397:0;tty-clock -c -s -C 5 -h
+: 1703926413:0;tty-clock -c -s -C 5
+: 1703937766:0;nmtui
+: 1703986156:0;yay -S yadp
+: 1703986223:0;xdelta3 --help
+: 1703986373:0;cd dkt/meleewave
+: 1703986373:0;ls
+: 1703986383:0;xdelta3 --help
+: 1703986472:0;xdelta3 -d -s ~/games/roms/VanillaMelee.iso Vaporwave\ melee.xdelta ~/games/roms/vapourwave-melee.iso
+: 1703987058:0;yay -Syu
+: 1703987553:0;yay -Ss xdelta3
+: 1703987561:0;yay -Ss xdelta3-cross-gui-bin
+: 1703987565:0;yay -S xdelta3-cross-gui-bin
+: 1703987633:0;xdelta3
+: 1703987637:0;xdelta3 --help
+: 1703987727:0;xdelta3 -e -s ~/games/roms/VanillaMelee.iso ~/games/roms/animelee-mod.iso animelee-modded.xdelta
+: 1703987952:0;xdelta3 -e -v -s ~/games/roms/VanillaMelee.iso ~/games/roms/animelee-mod.iso animelee-modded.xdelta
+: 1703987959:0;xdelta3 -e -f -v -s ~/games/roms/VanillaMelee.iso ~/games/roms/animelee-mod.iso animelee-modded.xdelta
+: 1703988239:0;ls
+: 1703988251:0;xdelta3 --help
+: 1703988282:0;xdelta3 -d -s ~/games/roms/VanillaMelee.iso animelee-modded.xdelta animelee-mod.iso
+: 1703988315:0;ls
+: 1703988701:0;cp games/roms/SSBM,\ 20XXHP\ 5.0.2.iso prj/meleeiso/patches/20XX.iso
+: 1703995794:0;wine HSDRawViewer.
+: 1703995795:0;wine HSDRawViewer.exe
+: 1703999172:0;xdelta3 -e -f -v -s ~/games/roms/VanillaMelee.iso ~/games/roms/20XX-5.2.iso 20XX-custom.xdelta
+: 1704008340:0;quickget --help
+: 1704008422:0;cd vm
+: 1704008423:0;ls
+: 1704008430:0;rm -rf *
+: 1704008433:0;ls
+: 1704008438:0;quickget --help
+: 1704008446:0;quickget void
+: 1704008452:0;quickget void glibc
+: 1704008477:0;quickget void current glibc
+: 1704008566:0;spicetify backup
+: 1704011421:0;cd .cache
+: 1704011422:0;ls
+: 1704011428:0;rm -rf spotify/
+: 1704011432:0;yay -S spotify
+: 1704011444:0;cd /opt/spotify
+: 1704011444:0;ls
+: 1704011453:0;cd Apps
+: 1704011453:0;ls
+: 1704011455:0;cd ..
+: 1704011458:0;cd
+: 1704011461:0;cd .config/spotify
+: 1704011461:0;ls
+: 1704011469:0;yay -Syu
+: 1704011652:0;ls
+: 1704011654:0;cd Users
+: 1704011654:0;ls
+: 1704011656:0;cd shrh89n43ffb82mxj59los1mz-user
+: 1704011656:0;ls
+: 1704011660:0;cd ,,
+: 1704011661:0;cd ..
+: 1704011665:0;mv spotify spotify.bak
+: 1704011674:0;killall spotify
+: 1704011683:0;killall thisandthatthatdoesntexist
+: 1704011684:0;killall spotify
+: 1704011694:0;btop
+: 1704011705:0;killall spotify
+: 1704011709:0;spotify
+: 1704012609:0;sudo rm -rf /opt/spotify
+: 1704012616:0;btop
+: 1704012629:0;yay -R spotify
+: 1704012634:0;yay -S spotify
+: 1704012645:0;spotify
+: 1704012655:0;btop
+: 1704012666:0;yay -R spotify
+: 1704012673:0;rm -rf .cache/spotify
+: 1704012684:0;cd /
+: 1704012686:0;fd spotifyn
+: 1704012687:0;fd spotify
+: 1704012761:0;yay -Scc
+: 1704012773:0;yay -Syu spotify
+: 1704012945:0;spotify
+: 1704012957:0;spicetify --help
+: 1704014027:0;spicetify restart
+: 1704014045:0;yay -Rns spotify
+: 1704018915:0;nmtui
+: 1704018996:0;yay -S spo
+: 1704018998:0;yay -S spotify
+: 1704019014:0;spicetify backup apply
+: 1704019018:0;spotify
+: 1704019039:0;btop
+: 1704019154:0;yay -R spicetify-cli
+: 1704019165:0;yay -R spicetify-cli spicetify-marketplace-bin
+: 1704019172:0;rm -rf /opt/spotify
+: 1704019174:0;sudo rm -rf /opt/spotify
+: 1704019181:0;rm -rf .cache/spotify
+: 1704019194:0;spotify
+: 1704019201:0;yay -Syu spotify
+: 1704019473:0;spotify
+: 1704019479:0;btop
+: 1704019494:0;spicetify help
+: 1704019497:0;spicetify
+: 1704019507:0;reboot
+: 1704019509:0;sudo reboot
+: 1704019563:0;yay -S spicetify
+: 1704019565:0;yay -S spicetify-cli
+: 1704019576:0;yay -S spicetify-cli spicetify-marketplace-bin
+: 1704019604:0;mv .config/spotify.bak/ .config/spotify
+: 1704019615:0;spicetify --help
+: 1704019618:0;spicetify backup applyn
+: 1704019619:0;spicetify backup apply
+: 1704019667:0;chmod +w /opt/spotify/Apps/xpui.spa
+: 1704019669:0;sudo chmod +w /opt/spotify/Apps/xpui.spa
+: 1704019672:0;spicetify backup apply
+: 1704019676:0;spicetify apply
+: 1704019697:0;spicetify restore backup apply
+: 1704019720:0;sudo chown nhe /opt/spotify/Apps/xpui.spa
+: 1704019722:0;spicetify restore backup apply
+: 1704019743:0;sudo chown root:root /opt/spotify/Apps/xpui.spa
+: 1704019745:0;spicetify restore backup apply
+: 1704019777:0;sudo chmod a+wr /opt/spotify\
+sudo chmod a+wr /opt/spotify/Apps -R
+: 1704019779:0;spicetify restore backup apply
+: 1704020489:0;spicetify restart
+: 1704021088:0;cd src/
+: 1704021119:0;cd ~/.config/spicetify/CustomApps
+: 1704021120:0;ls
+: 1704021123:0;ls betterLibrary
+: 1704021144:0;mkdir ncs-visualiser
+: 1704021146:0;cd ncs-visualiser
+: 1704021323:0;spicetify config custom_apps ncs-visualiser
+: 1704021330:0;spicetify apply
+: 1704026983:0;yay -Ss game2text
+: 1704075276:0;bat .zshenv
+: 1704075330:0;cp $XDG_DATA_HOME/gnupg /run/media/nhe/WII\ SSD/gnupg
+: 1704075332:0;cp -r $XDG_DATA_HOME/gnupg /run/media/nhe/WII\ SSD/gnupg
+: 1704075361:0;cp -r $XDG_DATA_HOME/pass /run/media/nhe/WII\ SSD/pass
+: 1704075405:0;cp -r .config/GIMP/ prj/dotfiles/.config/GIMP
+: 1704075537:0;sudo cp /etc/pacman.conf /run/media/nhe/WII\ SSD
+: 1704075549:0;sudo cp -r /etc/pacman.d /run/media/nhe/WII\ SSD
+: 1704078082:0;reboot
+: 1704083720:0;cd src
+: 1704083721:0;ls
+: 1704083724:0;git clone https://github.com/SirToffski/slippi-mainline-dolphin-PKGBUILD.git
+: 1704083779:0;cd slippi-mainline-dolphin-PKGBUILD
+: 1704083779:0;ls
+: 1704083789:0;makepkg -si
+: 1704084705:0;cd src
+: 1704084705:0;ls
+: 1704084720:0;gh repo clone mathewthe2/Game2Text
+: 1704085217:0;cd gam
+: 1704085219:0;cd Game2Text
+: 1704085220:0;ls
+: 1704085237:0;yay tesseract
+: 1704085266:0;yay -Ss tesseract
+: 1704085274:0;yay -S tesseract
+: 1704085361:0;yay -S tesseract-data-jpn
+: 1704085416:0;virtualenv venv --python=python3.7.4\
+source venv/bin/activate
+: 1704085433:0;python virtualenv venv --python=python3.7.4
+: 1704085457:0;python -m --help
+: 1704085459:0;python -m
+: 1704085503:0;pip install virtualenv
+: 1704085519:0;sudo pacman -Ss python-virtualenv
+: 1704085524:0;sudo pacman -S python-virtualenv
+: 1704085537:0;virtualenv --versin
+: 1704085540:0;virtualenv --version
+: 1704085576:0;virtualenv venv --python=python3.7.4\
+source venv/bin/activate
+: 1704085584:0;yay -S python3.7.4
+: 1704085627:0;yay -S pyenv
+: 1704085634:0;pyenv install 3.7.4
+: 1704085900:0;virtualenv -p /home/nhe/.pyenv/versions/3.7.4/bin/python3 venv
+: 1704085910:0;source venv/bin/activate
+: 1704085911:0;ls
+: 1704085917:0;pip install -r requirements.txt\
+python game2text.py
+: 1704085931:0;pip install -r requirements.txt
+: 1704085943:0;pip install --upgrade piip
+: 1704085949:0;pip install --upgrade pip
+: 1704085955:0;pip install -r requirements.txt
+: 1704085976:0;python game2text.py
+: 1704085981:0;pip install eel
+: 1704085987:0;python game2text.py
+: 1704085992:0;pip install pytesseract
+: 1704085995:0;python game2text.py
+: 1704085998:0;pip install psutil
+: 1704086000:0;python game2text.py
+: 1704086009:0;pip install ck3
+: 1704086016:0;pip install cv2
+: 1704086028:0;python game2text.py
+: 1704086052:0;pip install opencv
+: 1704086059:0;pip search opencv
+: 1704086113:0;pip install cv
+: 1704086115:0;pip install opencv
+: 1704086118:0;python game2text.py
+: 1704086307:0;pip install cv-3
+: 1704086360:0;python game2text.py
+: 1704086366:0;pip install tkinter
+: 1704086383:0;pip install everything-tkinter
+: 1704086386:0;python game2text.py
+: 1704088363:0;fdisk -l
+: 1704088365:0;sudo fdisk -l
+: 1704104843:0;cat /etc/hosts
+: 1704104931:0;ls
+: 1704104939:0;cd .local/share
+: 1704104940:0;ls
+: 1704104958:0;tar -cvf gnupg gnupg.tar.xz
+: 1704104971:0;tar -hhelp gnupg
+: 1704104974:0;tar -h
+: 1704104976:0;tar --help
+: 1704104998:0;tar -cJvf gnupg
+: 1704105006:0;tar -cJvf gnupg gnupg.tar.xz
+: 1704105018:0;tar -cJvf gnupg.tar.xz gnupg
+: 1704105133:0;ls gnupg
+: 1704105177:0;ls
+: 1704105203:0;tar -cJvf pass.tar.xz pass
+: 1704105206:0;ls
+: 1704105267:0;mkdir ~/backups/littlefella
+: 1704105279:0;mv gnupg.tar.xz ~/backups/littlefella
+: 1704105284:0;mv pass ~/backups/littlefella
+: 1704105294:0;mv ~/backups/littlefella/pass .
+: 1704105294:0;ls
+: 1704105305:0;mv pass.tar.xz ~/backups/littlefella
+: 1704105310:0;ls ~/backups/littlefella
+: 1704105318:0;pass github
+: 1704107878:0;ls
+: 1704107881:0;ls backups
+: 1704108201:0;nmtui
+: 1704108884:0;mpv Kikis\ Delivery\ Service\ \(1989\)\ 1080p\ BluRay\ x264\ Multi\ Audio\ Hindi\ English\ Japanese\ AAC\ -\ MeGUiL
+: 1704108892:0;mpv Kikis\ Delivery\ Service\ \(1989\)\ 1080p\ BluRay\ x264\ Multi\ Audio\ Hindi\ English\ Japanese\ AAC\ -\ MeGUiL/Kikis\ Delivery\ Service\ \(1989\)\ 1080p\ BluRay\ x264\ Multi\ Audio\ Hindi\ English\ Japanese\ AAC\ -\ MeGUiL.mkv
+: 1704108910:0;ls Kikis\ Delivery\ Service\ \(1989\)\ \[1080p\]\ \[BluRay\]\ \[YTS.MX\]
+: 1704108916:0;mpv Kikis\ Delivery\ Service\ \(1989\)\ \[1080p\]\ \[BluRay\]\ \[YTS.MX\]
+: 1704108943:0;rm -r Kikis\ Delivery\ Service\ \(1989\)\ \[1080p\]\ \[BluRay\]\ \[YTS.MX\]
+: 1704108950:0;mpv Kikis\ Delivery\ Service\ \(1989\)\ 1080p\ BluRay\ x264\ Multi\ Audio\ Hindi\ English\ Japanese\ AAC\ -\ MeGUiL/Kikis\ Delivery\ Service\ \(1989\)\ 1080p\ BluRay\ x264\ Multi\ Audio\ Hindi\ English\ Japanese\ AAC\ -\ MeGUiL.mkv
+: 1704109831:0;ssh-copy-id
+: 1704109834:0;ssh-copy-id --help
+: 1704109840:0;ssh-copy-id -h
+: 1704110160:0;yay -S ftp
+: 1704110544:0;cat /etc/resolv.conf
+: 1704111026:0;ifconfig
+: 1704111030:0;yay -S ifconfig
+: 1704111078:0;ls /proc/net/tcp
+: 1704111080:0;cat /proc/net/tcp
+: 1704111304:0;ip addr
+: 1704111429:0;ssh nhe@192.168.227.24
+: 1704111437:0;ls
+: 1704111488:0;cd vid
+: 1704111489:0;ls
+: 1704111500:0;mpv sftp://nhe@192.168.227.24/home/nhe/vid/pegglewhere.mp44
+: 1704111502:0;mpv sftp://nhe@192.168.227.24/home/nhe/vid/pegglewhere.mp4
+: 1704111529:0;mpv sftp://nhe:stamp79@192.168.227.24/home/nhe/vid/pegglewhere.mp4
+: 1704147962:0;nmtui
+: 1704148204:0;vim .config/user-dirs.dirs
+: 1704148233:0;mv pic pics
+: 1704148239:0;mv vid vids
+: 1704148244:0;mv dkt desk
+: 1704148250:0;mv doc docs
+: 1704148531:0;yay -S spotify
+: 1704148577:0;ls /usr/share/kbd
+: 1704148580:0;ls /usr/share/kbd/keymaps
+: 1704149414:0;yay -S tumbler
+: 1704149473:0;yay -S thunar-volman thunar-archive-plugin thunar-media-tags-plugin
+: 1704149602:0;rm -rf /opt/spotify
+: 1704149605:0;yay -R spotify
+: 1704149618:0;yay -S spotify
+: 1704153198:0;reboot
+: 1704153201:0;sudo reboot
+: 1704153252:0;spicetify apply
+: 1704153269:0;sudo chmod a+wr /opt/spotify\
+sudo chmod a+wr /opt/spotify/Apps -R
+: 1704153274:0;spicetify apply
+: 1704157649:0;cd .ssh
+: 1704157650:0;ls
+: 1704157656:0;cat config
+: 1704157922:0;yay -S gvfs
+: 1704158482:0;yay -S peerflix
+: 1704158658:0;yay -S notflix
+: 1704158733:0;yay -R notfilix
+: 1704158749:0;$ sudo curl -sL "https://raw.githubusercontent.com/Bugswriter/notflix/master/notflix" -o /usr/local/bin/notflix\
+$ sudo chmod +x /usr/local/bin/notflix
+: 1704158752:0;sudo curl -sL "https://raw.githubusercontent.com/Bugswriter/notflix/master/notflix" -o /usr/local/bin/notflix\
+sudo chmod +x /usr/local/bin/notflix
+: 1704158756:0;notflix
+: 1704158767:0;notflix help;
+: 1704158771:0;notflix
+: 1704158778:0;ls /usr/local/bin/notflix
+: 1704158781:0;ls /usr/local/bin/
+: 1704158787:0;rm /usr/local/bin/notflix
+: 1704158790:0;rm -f /usr/local/bin/notflix
+: 1704158796:0;sudo rm -f /usr/local/bin/notflix
+: 1704158822:0;curl -sL "https://raw.githubusercontent.com/Bugswriter/notflix/master/notflix" -o .local/bin/notflix
+: 1704158828:0;chmod +x .local/bin/notflix
+: 1704158831:0;notflix
+: 1704158861:0;notflix --help
+: 1704159018:0;cd .ssh/
+: 1704159019:0;ks
+: 1704159019:0;ls
+: 1704159048:0;ls id_ed25519
+: 1704159051:0;cat id_ed25519
+: 1704159054:0;cat id_ed25519.pub
+: 1704159080:0;/usr/bin/cat id_ed25519.pub | wl-copy
+: 1704159160:0;ssh nhe@192.168.1.67
+: 1704159514:0;ls
+: 1704159762:0;cd .ssh
+: 1704159762:0;ls
+: 1704159773:0;vim authorized_keys
+: 1704159799:0;systemctl restart sshd
+: 1704159821:0;ssh laptop
+: 1704159865:0;systemctl start sshd
+: 1704159880:0;systemctl status sshd
+: 1704159921:0;ssh desktop
+: 1704159942:0;/usr/bin/cat id_ed25519.pub | wl-copy
+: 1704159948:0;/usr/bin/cat .ssh/id_ed25519.pub | wl-copy
+: 1704159958:0;vim .ssh/authorized_keys
+: 1704159968:0;ssh desktop
+: 1704160016:0;eval "$(ssh-agent -s)"
+: 1704160029:0;ssh-add ~/.ssh/id_ed25519
+: 1704160050:0;ssh desktop
+: 1704161019:0;yay -S fish
+: 1704161024:0;fish
+: 1704162390:0;yay -Q qt
+: 1704162392:0;yay -Q qt6
+: 1704162397:0;yay -Q qt6-base
+: 1704162402:0;yay -Q qt6-svg
+: 1704162439:0;yay -R qt6-base
+: 1704162453:0;cd dl
+: 1704162453:0;ls
+: 1704162488:0;ls /usr/local
+: 1704162525:0;cd dkl
+: 1704162526:0;cd dl
+: 1704162527:0;ls
+: 1704162529:0;cd usr
+: 1704162530:0;ls
+: 1704162534:0;cd lib
+: 1704162534:0;ls
+: 1704162543:0;mv libslippi_rust_extensions.so /usr/lib/
+: 1704162548:0;sudo cp libslippi_rust_extensions.so /usr/lib/
+: 1704162555:0;ls
+: 1704162632:0;sudo cp -vr udev /usr/lib/
+: 1704162637:0;ls udev
+: 1704162641:0;ls udev/rules.d
+: 1704162647:0;cd ..
+: 1704162649:0;ls
+: 1704162650:0;cd local
+: 1704162650:0;ls
+: 1704162653:0;ls share
+: 1704162658:0;cd ..
+: 1704162667:0;cp -vr local /usr/local
+: 1704162669:0;sudo cp -vr local /usr/local
+: 1704162682:0;ls
+: 1704162683:0;cd local
+: 1704162683:0;ls
+: 1704162686:0;cd bin
+: 1704162686:0;ls
+: 1704162688:0;cd slippi-mainline-dolphin-emu
+: 1704162688:0;ls
+: 1704162715:0;/usr/local/bin
+: 1704162716:0;ls /usr/local/bin
+: 1704162719:0;cd ..
+: 1704162723:0;ls
+: 1704162736:0;sudo cp -rv * /usr/local/
+: 1704162757:0;ls /usr/share/bison
+: 1704162762:0;ls /usr/local
+: 1704162764:0;ls /usr/local/bin
+: 1704162768:0;/usr/local/bin/slippi-mainline-dolphin-emu/slippi-mainline-dolphin-emu
+: 1704162963:0;cd
+: 1704162965:0;/usr/local/bin/slippi-mainline-dolphin-emu/slippi-mainline-dolphin-emu
+: 1704169186:0;ls .config/thunar
+: 1704169190:0;ls .config/Thunar
+: 1704169844:0;cat .config/zsh
+: 1704169851:0;cat .config/zsh/con
+: 1704169854:0;cat .config/zsh/aliases
+: 1704170995:0;ls
+: 1704171313:0;rm -rf Joe\ Hisaishi\ -\ A\ Symphonic\ Celebration\ -\ Music\ from\ the\ Studio\ Ghibli\ Films\ of\ Hayao\ Miyazaki\ \(2023\)\ \[24Bit-96kHz\]\ FLAC\ \[PMEDIA\]\ â­ƒ°ï¸ƒ¯
+: 1704171325:0;bat .config/zsh/.zshrc
+: 1704171404:0;vim .config/zsh/.p10k.zsh
+: 1704171413:0;vim .config/zsh/.zshrc
+: 1704171485:0;ls
+: 1704175439:0;p10k
+: 1704175443:0;p10k configure
+: 1704175568:0;ls
+: 1704175583:0;vim .config/zsh/.p10k.zsh
+: 1704175673:0;ls
+: 1704175703:0;cd .config
+: 1704175703:0;ls
+: 1704175841:0;p10k configure
+: 1704175931:0;,s
+: 1704175932:0;ls
+: 1704176328:0;reboot
+: 1704178247:0;ls
+: 1704178250:0;cd .config/zsh
+: 1704178250:0;ls
+: 1704178705:0;fish
+: 1704179432:0;yay -S lf
+: 1704179446:0;yay -S lfcd
+: 1704180255:0;cd .config/emacs/elfeed
+: 1704180257:0;cd ..
+: 1704180258:0;ls
+: 1704180268:0;fish
+: 1704180275:0;ls
+: 1704180283:0;cat .git
+: 1704180284:0;cat .gitignore
+: 1704180520:0;su
+ls
+: 1704180634:0;,s
+: 1704180635:0;ls
+: 1704180941:0;ls /vi
+: 1704180944:0;ls vid
+: 1704181003:0;ls vid/slippi-replays
+: 1704181012:0;rm -r vid
+: 1704181020:0;l
+: 1704181021:0;sls
+: 1704181131:0;p10k help
+: 1704181135:0;p10k segment
+: 1704181137:0;p10k segment --help;
+: 1704181137:0;p10k segment --help
+: 1704181220:0;p10k segment -f 7 -t '@'
+: 1704191895:0;nmtui
+: 1704193573:0;ls
+: 1704193575:0;cd ..
+: 1704193577:0;cd
+: 1704193578:0;ls
+: 1704193599:0;cd .config
+: 1704193599:0;ls
+: 1704193603:0;ls ~/prj/dotfiles
+: 1704193606:0;ls ~/prj/dotfiles/.config
+: 1704193663:0;rm ~/prj/dotfiles/.config/starship.toml
+: 1704193669:0;ln starship.toml ~/prj/dotfiles/.config/starship.toml
+: 1704193672:0;ln -v starship.toml ~/prj/dotfiles/.config/starship.toml
+: 1704193675:0;ls
+: 1704193678:0;ls ~/prj/dotfiles/.config
+: 1704193776:0;rm -rf ~/prj/dotfiles/.config/hypr
+: 1704193787:0;ln -v hypr ~/prj/dotfiles/.config
+: 1704193821:0;ln --help
+: 1704193849:0;ln -dv hypr ~/prj/dotfiles/.config
+: 1704194019:0;cp -lR hypr ~/prj/dotfiles/.config/
+: 1704194026:0;ls ~/prj/dotfiles/.config
+: 1704194027:0;ls ~/prj/dotfiles/.confighy
+: 1704194029:0;ls ~/prj/dotfiles/.config/hypr
+: 1704194035:0;ls ~/prj/dotfiles/.config/hypr/hyprland.conf
+: 1704194037:0;cat ~/prj/dotfiles/.config/hypr/hyprland.conf
+: 1704194119:0;ls ~/prj/dotfiles/.config/
+: 1704194138:0;rm -r ~/prj/dotfiles/.config/btop/
+: 1704194147:0;ls
+: 1704194154:0;cp --help
+: 1704194157:0;cp --help | bat
+: 1704194209:0;cp -lR btop ~/prj/dotfiles/.config/
+: 1704194217:0;ls ~/prj/dotfiles/.config/
+: 1704194225:0;rm -r ~/prj/dotfiles/.config/cava
+: 1704194234:0;cp -lR cava ~/prj/dotfiles/.config
+: 1704194255:0;rm -r ~/prj/dotfiles/.config/GIMP
+: 1704194261:0;cp -lR gimp ~/prj/dotfiles/.config
+: 1704194265:0;cp -lR GIMP ~/prj/dotfiles/.config
+: 1704194269:0;ls ~/prj/dotfiles/.config/
+: 1704194275:0;rm -r ~/prj/dotfiles/.config/kitty
+: 1704194281:0;rm -r ~/prj/dotfiles/.config/neofetch
+: 1704194292:0;cp -lR kitty ~/prj/dotfiles/.config
+: 1704194297:0;cp -lR neofetch ~/prj/dotfiles/.config
+: 1704194308:0;rm -r ~/prj/dotfiles/.config/rofi
+: 1704194313:0;cp -lR rofi ~/prj/dotfiles/.config
+: 1704194318:0;ls ~/prj/dotfiles/.config/
+: 1704194337:0;rm -r ~/prj/dotfiles/.config/Thunar
+: 1704194342:0;rm -r ~/prj/dotfiles/.config/waybar
+: 1704194347:0;rm -r ~/prj/dotfiles/.config/zsh
+: 1704194358:0;cp -lR Thunar ~/prj/dotfiles/.config
+: 1704194363:0;cp -lR waybar ~/prj/dotfiles/.config
+: 1704194366:0;cp -lR zsh ~/prj/dotfiles/.config
+: 1704194399:0;cd zsh/
+: 1704194400:0;ls
+: 1704194402:0;ls zsh-
+: 1704194404:0;ls zsh-syntax-highlighting
+: 1704194414:0;ls zsh-syntax-highlighting/themes
+: 1704194662:0;ls zsh-syntax-highlighting/themes/
+: 1704194663:0;ls
+: 1704194666:0;cd zsh-
+: 1704194667:0;cd zsh-syntax-highlighting
+: 1704194668:0;ls
+: 1704194669:0;cd themes
+: 1704194670:0;ls
+: 1704194675:0;cd themes
+: 1704194675:0;ls
+: 1704194677:0;cd zsh-syntax-highlighting
+: 1704194677:0;ls
+: 1704194681:0;rm -rf .git
+: 1704194685:0;rm README.md
+: 1704194696:0;rm -f README.md LICENSE
+: 1704194697:0;ls
+: 1704194703:0;sudo rm -f README.md LICENSE
+: 1704194712:0;cd ../../../..
+: 1704194713:0;ls
+: 1704194717:0;cd ..
+: 1704194717:0;ls
+: 1704194724:0;cp -lR zsh ~/prj/dotfiles/.config
+: 1704194744:0;cd zsh/
+: 1704194745:0;ls
+: 1704194748:0;ls -la
+: 1704194758:0;rm zsh-autosuggestions
+: 1704194761:0;ls -la
+: 1704194783:0;rm zsh-syntax-highlighting
+: 1704194784:0;ls
+: 1704194818:0;sudo ln /usr/share/zsh/plugins/zsh-syntax-highlighting zsh-syntax-highlighting
+: 1704194832:0;sudo cp -lR /usr/share/zsh/plugins/zsh-syntax-highlighting/ zsh-syntax-highlighting
+: 1704194846:0;sudo ln -s /usr/share/zsh/plugins/zsh-syntax-highlighting zsh-syntax-highlighting
+: 1704194848:0;ls
+: 1704194851:0;ls -la
+: 1704194953:0;chown -R nhe zsh-syntax-highlighting
+: 1704194956:0;sudo chown -R nhe zsh-syntax-highlighting
+: 1704194958:0;ls -la
+: 1704194965:0;ls zsh-syntax-highlighting
+: 1704194969:0;ls -la zsh-syntax-highlighting
+: 1704194974:0;ls -la zsh-syntax-highlighting/themes
+: 1704194976:0;ls -la zsh-syntax-highlighting/themes/themes
+: 1704194980:0;ls -la zsh-syntax-highlighting/themes/themes/zsh-syntax-highlighting
+: 1704194997:0;rm -rf zsh-syntax-highlighting/themes/themes/zsh-syntax-highlighting/.git
+: 1704195008:0;cd ..
+: 1704195012:0;cp -lR zsh ~/prj/dotfiles/.config
+: 1704195061:0;cd zsh
+: 1704195062:0;ls
+: 1704195073:0;rm -rf zsh-syntax-highlighting
+: 1704195102:0;sudo cp -r /usr/share/zsh/plugins/zsh-syntax-highlighting zsh-syntax-highlighting
+: 1704195103:0;ls
+: 1704195105:0;ls -la
+: 1704195107:0;cd ..
+: 1704195112:0;cd zsh
+: 1704195113:0;ls
+: 1704195120:0;sudo chown -R nhe zsh-syntax-highlighting
+: 1704195127:0;ls -la
+: 1704195130:0;cd ..
+: 1704195134:0;cp -lR zsh ~/prj/dotfiles/.config
+: 1704195143:0;cd ~/prj/dotfiles/.config

@@ -31,8 +31,9 @@ setopt hist_verify
 setopt inc_append_history
 setopt share_history
 
-autoload -U compinit 
+autoload -U compinit
 compinit
+_comp_options+=(globdots)
 
 bindkey '^a' beginning-of-line
 bindkey '^e' end-of-line
@@ -45,7 +46,7 @@ bindkey '^H' backward-delete-word
 # theme/plugins
 source ~/.config/zsh/zsh-syntax-highlighting/themes/catppuccin_macchiato-zsh-syntax-highlighting.zsh
 source ~/.config/zsh/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
+# source ~/.config/zsh/zsh-autosuggestions/zsh-autosuggestions.zsh
 source ~/.config/zsh/zsh-history-substring-search/zsh-history-substring-search.zsh
 source /usr/share/zsh-theme-powerlevel10k/powerlevel10k.zsh-theme
 

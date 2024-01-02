@@ -1,0 +1,34 @@
+# settings
+
+(GimpColorBalanceConfig "2021-03-10 21:14:53"
+    (time 1615371293)
+    (range shadows)
+    (cyan-red 0)
+    (magenta-green 0)
+    (yellow-blue 0)
+    (range midtones)
+    (cyan-red -0.113)
+    (magenta-green 0.19500000000000001)
+    (yellow-blue -0.059000000000000004)
+    (range highlights)
+    (cyan-red 0)
+    (magenta-green 0)
+    (yellow-blue 0)
+    (preserve-luminosity yes))
+(GimpColorBalanceConfig "2020-05-30 12:21:38"
+    (time 1590805298)
+    (range shadows)
+    (cyan-red 0)
+    (magenta-green 0)
+    (yellow-blue 0)
+    (range midtones)
+    (cyan-red 1)
+    (magenta-green 1)
+    (yellow-blue 1)
+    (range highlights)
+    (cyan-red 0)
+    (magenta-green 0)
+    (yellow-blue 0)
+    (preserve-luminosity yes))
+
+# end of settings

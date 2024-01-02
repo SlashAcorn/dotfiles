@@ -1,0 +1,6 @@
+# GIMP gimp-perspective-tool options
+
+(background (color-rgb 0.94509804248809814 0.94509804248809814 0.98039215803146362))
+(interpolation linear)
+
+# end of gimp-perspective-tool options
